@@ -1,7 +1,7 @@
 # IMPORT
 
-from Pokemon_class import Pokemon
-from Trainer_class import Trainer
+from pokemon_class import Pokemon
+from trainer_class import Trainer
 
 # INSTANTIATION
 
