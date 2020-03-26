@@ -17,10 +17,17 @@ class Pokemon:
         self.health = 50
         self.max_health = self.health * self.level
         self.id = name + str(self.uid)
+        self.active = False
         Pokemon.uid += 1
 
     def __repr__(self):
         return ("{} - Type {} - {} ({}/{}HPs) - Level {} ({}/100XP)".format(self.name, self.type, self.get_status(), self.health, self.max_health, self.level, self.experience))
+
+    def is_active(self):
+        if self.active:
+            return "Active"
+        else:
+            return "Pokeball"
 
     def get_status(self):
         if self.alive:
@@ -60,7 +67,7 @@ class Pokemon:
                 self.knock_out()
             else:
                 print("> {} is already dead.".format(self.name))
-
+                
     def restore_health(self, restore_hp):
         if self.is_alive():
             self.health += restore_hp
@@ -139,7 +146,6 @@ class Pokemon:
             return
         
     def attack(self, target):
-        print("--- {} attacks {} ---".format(self.name, target.name))
         if self.is_alive():
             if self.is_target_alive(target):
                 damage = self.damage_boost(target) * self.level * 3
