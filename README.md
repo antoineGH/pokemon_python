@@ -1,5 +1,7 @@
 ## Pokemon Python
 
+![Pokemon Screenshot](https://github.com/antoineratat/pokemon_python/blob/master/screenshots/screenshot_1.png?raw=false)
+
 ## Table of contents
 
 -   [General info](#general-info)
