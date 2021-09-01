@@ -1,6 +1,6 @@
 ## Pokemon Python
 
-![Pokemon Screenshot](https://github.com/antoineratat/pokemon_python/blob/master/screenshots/screenshot_1.png?raw=false)
+![Pokemon Screenshot](https://templars.guru/app/github/pokemon_python/screenshot_1.png)
 
 ## Table of contents
 
